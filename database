@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS calculator_db;
+USE calculator_db;
+
+CREATE TABLE history (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    expression VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+    result VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+);
